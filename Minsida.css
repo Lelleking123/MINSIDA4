@@ -1,0 +1,48 @@
+/* CSS Till Footern */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #302f49;
+  margin-top: 80px;
+  height: 250px;
+}
+
+.Powered-by {
+  color: #fff;
+  padding: 15px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-links .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.footer-links .links span {
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.footer-links .links a {
+  text-decoration: none;
+  color: #a1a1a1;
+  padding: 10px 20px;
+  transition: 0.5s;
+}
+
+.footer-links .links a:hover {
+  color: #828282;
+  transform: scale(110%);
+  transition: 0.5;
+}
