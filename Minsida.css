@@ -1,9 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 16vh;
+  background-color: rgb(255, 255, 255);
+}
+
+header img {
+  height: 80px;
+}
+
+header a {
+  position: absolute;
+  right: 30px;
+  color: #3f7941;
+  transform: scale(150%);
+}
+
+.Bildbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 520px;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url(Blad.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 5px 5px 10px;
+}
+
+.Bildbox h1 {
+  font-size: 60px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.Bildbox p {
+  font-size: 25px;
+  color: #d1d1d1;
+  text-transform: capitalize;
+  margin: 20px 0;
+}
+
+.Bildbox button {
+  background-color: #3f7941;
+  color: #000;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 0px 26px 5px #3f7941;
+  transition: 1s;
+}
+
+.Bildbox button:hover {
+  transform: scale(105%);
+  transition: 1s;
+}
+
+.Container {
+  border-top: 3px;
+  margin: 200px 0px 200px 0px;
+  background-color: #e0e4d4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 75vh;
+}
+
+.Box img {
+  aspect-ratio: 1/1;
+  width: 300px;
+  box-shadow: #c5cbb2 5px 5px 20px 5px;
+  transition: 1s;
+}
+
+.Box img:hover {
+  transform: scale(110%);
+  transition: 1s;
+}
+
+.Bildbox {
+  display: flex;
+  justify-content: center;
+}
+
 /* CSS Till Footern */
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #302f49;
+  background-color: #254626;
   margin-top: 80px;
   height: 250px;
 }
@@ -36,13 +147,114 @@
 
 .footer-links .links a {
   text-decoration: none;
-  color: #a1a1a1;
+  color: #fff;
   padding: 10px 20px;
   transition: 0.5s;
 }
 
 .footer-links .links a:hover {
-  color: #828282;
+  color: #9cba9d;
   transform: scale(110%);
   transition: 0.5;
+}
+
+/* CSS till Footern */
+
+/*--====== Global Variables ======--*/
+:root {
+  --bg-color: #13131f;
+  --bg-color-2: #161623;
+  --text-color: #a9afc3;
+}
+/*--====== Sidebar ======--*/
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  max-width: 300px;
+  width: 80%;
+  height: 100%;
+  padding: 2rem;
+  background-color: var(--bg-color-2);
+  box-shadow: 0 10px 20px -4px #000;
+  overflow-x: hidden;
+  overflow-y: auto;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-100%);
+  transition: opacity 0.3s ease, visibility 0.2s ease, transform 0.3s ease;
+}
+/* when the sidebar has 'show' class */
+#sidebar.show {
+  pointer-events: all;
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+.sidebar_content {
+  padding: 2.8rem 0;
+  pointer-events: none;
+  /* so that the Sidebar does not get closed while clicking on sidebar_content */
+}
+.sidebar_content a {
+  pointer-events: all;
+  /* so that all the a inside sidebar_content are clickable */
+}
+.sidebar_body {
+  border-top: 1px dashed var(--text-color);
+  border-bottom: 1px dashed var(--text-color);
+}
+.side_navlinks ul {
+  display: grid;
+  gap: 2rem;
+}
+.side_navlinks li a {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+.side_navlinks a:hover {
+  opacity: 1;
+}
+
+/*---- Sidebar-Toggler ----*/
+.sidebar_toggler {
+  position: fixed;
+  top: 4vh;
+  left: 3vw;
+  width: 1.75rem;
+  height: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  overflow: hidden;
+}
+.sidebar_toggler span {
+  background-color: #ddd;
+  width: 100%;
+  height: 2.4px;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  /* so that it doesn't overlap the sidebar_toggler */
+}
+/* if the sidebar has 'show' class then their adjacent-sibling (i.e., sidebar_toggler) will... */
+#sidebar.show + .sidebar_toggler {
+  justify-content: center;
+}
+#sidebar.show + .sidebar_toggler span {
+  margin-top: -1.2px;
+  margin-bottom: -1.2px;
+}
+#sidebar.show + .sidebar_toggler span:first-child {
+  transform: rotate(45deg);
+}
+#sidebar.show + .sidebar_toggler span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+#sidebar.show + .sidebar_toggler span:last-child {
+  transform: rotate(-45deg);
 }
