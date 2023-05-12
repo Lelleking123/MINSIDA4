@@ -173,3 +173,13 @@ slider.addEventListener("scroll", function () {
     box_left.isNotCenter();
   }
 });
+
+// document
+//   .getElementsByClassName("Btn-produkt")
+//   .addEventListener("click", ImageToShop);
+
+// function ImageToShop(){
+//   if (Btn-produkt:nth-child(1)) {
+
+//   }
+// }
