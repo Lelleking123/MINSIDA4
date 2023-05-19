@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
 :root {
   --huvud-färg: #3f7941;
   --ljusgrön: #3f7941d2;
@@ -29,12 +27,6 @@
 h1 {
   color: white;
   text-transform: uppercase;
-}
-
-@media (max-width: 768px) {
-  .heading h1 {
-    font-size: 21px;
-  }
 }
 
 .container {
