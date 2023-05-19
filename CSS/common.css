@@ -158,3 +158,71 @@ header a {
 .navigation.active .menuToggle::after {
   transform: translateY(0px) rotate(-45deg);
 }
+
+/* CSS Till Footern */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3f7941;
+  height: 250px;
+}
+
+.Powered-by {
+  color: #fff;
+  padding: 15px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-links .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.footer-links .links span {
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.footer-links .links a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  transition: 0.5s;
+}
+
+.footer-links .links a:hover {
+  color: #9cba9d;
+  transform: scale(110%);
+  transition: 0.5;
+}
+
+@media screen and (max-width: 600px) {
+  .footer-links .links span {
+    font-size: 15px;
+    margin: 10px 0;
+  }
+  .links {
+    width: 10px;
+  }
+  .Powered-by {
+    width: 150px;
+  }
+  .navigation {
+    left: 5px;
+    width: 105px;
+  }
+  .Logo img {
+    width: 160px;
+  }
+}

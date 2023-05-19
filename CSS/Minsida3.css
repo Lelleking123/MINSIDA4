@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +6,6 @@
 
 body {
   background-color: rgb(255, 255, 255);
-  font-family: "Roboto", sans-serif;
   height: 100%;
 }
 
@@ -162,7 +158,7 @@ body {
   height: 100%;
   left: 0;
   top: 0;
-  background: url("Forest.jpg") no-repeat center;
+  background: url("Images/Forest.jpg") no-repeat center;
   background-size: cover;
   filter: blur(5px);
   z-index: -1;
@@ -179,7 +175,7 @@ body {
 }
 
 .Vänstra-sidan {
-  background: url("Blad.jpg") no-repeat center;
+  background: url("Images/Blad.jpg") no-repeat center;
   background-size: cover;
   height: 100%;
 }
@@ -299,54 +295,3 @@ textarea {
 }
 
 /* Sida 3 Contact Slut */
-
-/* CSS Till Footern */
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #3f7941;
-  height: 250px;
-  margin-bottom: -20px;
-}
-
-.Powered-by {
-  color: #fff;
-  padding: 15px;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.footer-links .links {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 40px;
-}
-
-.footer-links .links span {
-  font-size: 20px;
-  color: #fff;
-  text-transform: uppercase;
-  margin: 10px 0;
-}
-
-.footer-links .links a {
-  text-decoration: none;
-  color: #fff;
-  padding: 10px 20px;
-  transition: 0.5s;
-}
-
-.footer-links .links a:hover {
-  color: #9cba9d;
-  transform: scale(110%);
-  transition: 0.5;
-}
-
-/* CSS till Footern */
