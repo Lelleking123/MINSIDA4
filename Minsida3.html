@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/common.css" />
     <link rel="stylesheet" href="CSS/Minsida3.css" />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
     <link rel="icon" href="Images/Logo.png" />
     <script
       src="https://kit.fontawesome.com/ee0752e9b1.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
     <title>Contact</title>
   </head>
   <body>
@@ -38,21 +43,25 @@
       </ul>
     </nav>
     <main>
-      <div class="kontakt-container">
-        <div class="kontakt-box">
-          <div class="Vänstra-sidan"></div>
-          <div class="Högra-sidan">
-            <h1>Contact Us</h1>
-            <form>
-              <input type="text" class="textfält" placeholder="Full Name" />
-              <input type="text" class="textfält" placeholder="Email" />
-              <input type="text" class="textfält" placeholder="Phone" />
-              <textarea placeholder="Message" class="textfält"></textarea>
-              <input type="submit" value="Submit" class="knapp" />
-            </form>
+      <section>
+        <div class="kontakt-container">
+          <div class="kontakt-box">
+            <div class="Vänstra-sidan">
+              <div id="map"></div>
+            </div>
+            <div class="Högra-sidan">
+              <h1>Contact Us</h1>
+              <form>
+                <input type="text" class="textfält" placeholder="Full Name" />
+                <input type="text" class="textfält" placeholder="Email" />
+                <input type="text" class="textfält" placeholder="Phone" />
+                <textarea placeholder="Message" class="textfält"></textarea>
+                <input type="submit" value="Submit" class="knapp" />
+              </form>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="Powered-by">

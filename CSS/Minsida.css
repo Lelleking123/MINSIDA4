@@ -315,25 +315,6 @@ button a {
 
 /* Animationer Javascript och CSS Reveal Slut */
 
-/* {
-  margin: 20px 0;
-  font-size: 22px;
-  font-weight: bold;
-  animation: fadeInOut 2s ease-in-out infinite;
-}
-
-@keyframes fadeInOut {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-} */
-
 @media screen and (max-width: 600px) {
   header img {
     height: 60px;

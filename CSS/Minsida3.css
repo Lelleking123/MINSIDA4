@@ -245,6 +245,15 @@ textarea {
   background-color: #fff;
 }
 
+#map {
+  margin-top: 350.5px;
+  left: 206.5px;
+  z-index: 2;
+  position: relative;
+  width: 250px;
+  height: 30%;
+}
+
 @media screen and (min-width: 768px) {
   .kontakt-box {
     grid-template-columns: repeat(2, 1fr);
@@ -252,6 +261,21 @@ textarea {
   .left {
     display: block;
     height: 100%;
+  }
+  #map {
+    left: auto;
+  }
+  .footer {
+    margin-top: 220px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #map {
+    left: auto;
+  }
+  .footer {
+    margin-top: 220px;
   }
 }
 
@@ -270,6 +294,16 @@ textarea {
   }
   .kontakt-container {
     padding: 20px;
+  }
+  #map {
+    margin: auto;
+    left: auto;
+    width: 200px;
+    height: 100px;
+  }
+
+  .footer {
+    margin-top: 100px;
   }
 
   .kontakt-box {

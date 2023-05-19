@@ -46,3 +46,12 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 window.addEventListener("load", reveal);
+
+mapboxgl.accessToken =
+  "pk.eyJ1IjoidXNlcm5hbWUxMDEwMiIsImEiOiJjbGhwenFqdXAweHF2M2RwZXQxM2VoZXBiIn0.nnbMjlmlxu6Hc6Cf8YGZzg";
+const map = new mapboxgl.Map({
+  container: "map",
+  style: "mapbox://styles/username10102/clhuw2ylw025101pn8oxv8w12",
+  center: [18.062055, 59.439785], // start position
+  zoom: 10, // zoom
+});
