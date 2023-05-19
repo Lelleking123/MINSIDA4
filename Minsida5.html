@@ -4,53 +4,143 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="common.css" />
-    <link rel="stylesheet" href="Minsida5.css" />
+    <link rel="stylesheet" href="CSS/common.css" />
+    <link rel="stylesheet" href="CSS/Minsida5.css" />
+    <link rel="icon" href="Images/Logo.png" />
     <script
       src="https://kit.fontawesome.com/ee0752e9b1.js"
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
+    <title>Cart</title>
   </head>
   <body>
-    <table>
-      <thead>
-        <tr>
-          <th>Item</th>
-          <th>Price</th>
-          <th>Quantity</th>
-          <th>Total</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Item 1</td>
-          <td>$10.00</td>
-          <td>2</td>
-          <td>$20.00</td>
-        </tr>
-        <tr>
-          <td>Item 2</td>
-          <td>$20.00</td>
-          <td>1</td>
-          <td>$20.00</td>
-        </tr>
-        <tr>
-          <td colspan="3">Subtotal</td>
-          <td>$40.00</td>
-        </tr>
-        <tr>
-          <td colspan="3">Tax (10%)</td>
-          <td>$4.00</td>
-        </tr>
-        <tr>
-          <td colspan="3">Total</td>
-          <td>$44.00</td>
-        </tr>
-      </tbody>
-    </table>
-    <div class="btn-buy">
-      <button type="button">Buy Now</button>
-    </div>
+    <nav class="navigation">
+      <div class="userBx">
+        <div class="imgBx">
+          <img src="Images/Bild-ikon.png" alt="Krukväxt" />
+        </div>
+        <p class="username">Information</p>
+      </div>
+      <div class="menuToggle"></div>
+      <ul class="menu">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="Minsida2.html">Products</a>
+        </li>
+        <li>
+          <a href="Minsida3.html">Contact</a>
+        </li>
+        <li>
+          <a href="#">Cart</a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <div class="Logo">
+        <img src="Images/Logo.png" alt="Logo" />
+      </div>
+      <a href="#">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </a>
+    </header>
+    <main>
+      <section>
+        <table>
+          <thead>
+            <tr>
+              <th>Vara</th>
+              <th>Pris</th>
+              <th>Mängd</th>
+              <th>Totalt</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Vara 1</td>
+              <td>299:-</td>
+              <td>2</td>
+              <td>598:-</td>
+            </tr>
+            <tr>
+              <td>Vara 2</td>
+              <td>399:-</td>
+              <td>1</td>
+              <td>399:-</td>
+            </tr>
+            <tr>
+              <td colspan="3">Totalt utan skatt</td>
+              <td>997:-</td>
+            </tr>
+            <tr>
+              <td colspan="3">Skatt 10%</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="3">Totalt med skatt</td>
+              <td>1096:-</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="btn-buy">
+          <button type="button">Buy Now</button>
+        </div>
+      </section>
+      <section>
+        <ol id="Container-list">
+          <li class="List-box">
+            <h3>Lorem Ipsum</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Adipiscing diam donec adipiscing tristique risus.
+            </p>
+          </li>
+          <li class="List-box">
+            <h3>Lorem Ipsum</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Adipiscing diam donec adipiscing tristique risus.
+            </p>
+          </li>
+          <li class="List-box">
+            <h3>Lorem Ipsum</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Adipiscing diam donec adipiscing tristique risus.
+            </p>
+          </li>
+        </ol>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="Powered-by">
+        Powered By © Webmaker | All Rights Reserved | Made By
+      </div>
+      <div class="footer-links">
+        <div class="links">
+          <span>More Info</span>
+          <a href="Sida.html">Home</a>
+          <a href="Sida2.html">Products</a>
+          <a href="Sida3.html">Contact</a>
+        </div>
+        <div class="links">
+          <span>Social Links</span>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://twitter.com/" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
   </body>
+  <script src="JS/Minsida.js"></script>
 </html>
